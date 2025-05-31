@@ -1,20 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
 
-const icons = [
-  "/assets/icons/c++.png",
-  "/assets/icons/js.png",
-  "/assets/icons/python.png",
-  "/assets/icons/react.png",
-  "/assets/icons/node.png",
-  "/assets/icons/mongodb.png",
-  "/assets/icons/tailwind.png",
-  "/assets/icons/express.png",
-  "/assets/icons/machine-learning.png",
-  "/assets/icons/data analytics.png",
-  "/assets/icons/dsa.png",
-];
-
 export default function RotatingCircle() {
   const containerRef = useRef(null);
 

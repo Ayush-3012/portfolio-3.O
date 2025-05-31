@@ -1,43 +1,6 @@
-// components/AboutStats.jsx
-
 import Image from "next/image";
-import RotatingSkills from "../components/RotatingSkills";
-
-const stats = [
-  {
-    icon: "/assets/icons/project.png",
-    alt: "Projects",
-    value: "20+",
-    label: "Projects",
-    x: "left-5",
-    y: "top-10",
-  },
-  {
-    icon: "/assets/icons/programming.png",
-    alt: "Coding",
-    value: "5+",
-    label: "Years of Coding",
-    x: "right-5",
-    y: "top-10",
-  },
-  {
-    icon: "/assets/icons/certificate.png",
-    alt: "Certifications",
-    value: "8+",
-    label: "Certificates",
-    x: " left-5",
-    y: "bottom-10",
-  },
-  {
-    icon: "/assets/icons/skills.png",
-    alt: "Skills",
-    value: "15+",
-    label: "Skills",
-
-    x: " right-5",
-    y: "bottom-10",
-  },
-];
+import { stats } from "../data/stats";
+import { icons } from "../data/tech-icons";
 
 export default function About() {
   return (
@@ -72,7 +35,24 @@ export default function About() {
             </div>
           ))}
         </div>
-        <RotatingSkills />
+        <div className="shadow-[1px_1px_10px] shadow-rose-600 bg-slate-900 flex items-center justify-center rounded-xl py-2 w-96 -rotate-[20deg]">
+          <div className="grid grid-cols-3 gap-10 px-4 ">
+            {icons.map(({ icon, alt }, index) => (
+              <div
+                key={index}
+                className="group hover:bg-slate-800 rounded-xl flex items-center justify-center p-2 cursor-pointer hover:scale-115 duration-150 transition-all"
+              >
+                <Image
+                  src={icon}
+                  alt={alt}
+                  width={150}
+                  height={150}
+                  className="grayscale transition-all duration-150 group-hover:grayscale-0 group-hover:scale-110"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </>
   );

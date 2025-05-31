@@ -1,0 +1,14 @@
+export const icons = [
+  { icon: "/assets/icons/c++.png", alt: "C++" },
+  { icon: "/assets/icons/js.png", alt: "js" },
+  { icon: "/assets/icons/python.png", alt: "python" },
+  { icon: "/assets/icons/html.webp", alt: "html" },
+  { icon: "/assets/icons/css.webp", alt: "css" },
+  { icon: "/assets/icons/mongodb.png", alt: "mongodb" },
+  { icon: "/assets/icons/express.png", alt: "express" },
+  { icon: "/assets/icons/react.png", alt: "react" },
+  { icon: "/assets/icons/node.png", alt: "node" },
+  { icon: "/assets/icons/redux.webp", alt: "redux" },
+  { icon: "/assets/icons/nextjs.png", alt: "nextJs" },
+  { icon: "/assets/icons/tailwind.png", alt: "tailwind" },
+];

@@ -8,7 +8,7 @@ const Navbar = () => {
     <div className="absolute top-0 left-0 mt-8 mx-4 z-50 max-sm:mt-4 max-sm:w-[90%] max-sm:fixed">
       <div className="bg-gray-200 rounded-md px-4 py-2 flex gap-4 items-center max-sm:justify-around">
         <Link
-          href="/"
+          href="/home"
           className="text-sm font-medium flex items-center justify-center hover:underline "
         >
           <span className="max-md:hidden">Home</span>
