@@ -8,7 +8,7 @@ import { SiGeeksforgeeks } from "react-icons/si";
 
 const Footer = () => {
   return (
-    <div className="border-l-2 w-32 border-purple-700 relative">
+    <div className="w-32 shadow-[1px_1px_20px] ronded-l-xl shadow-purple-700 relative">
       <div className=" clip-right-bracket h-screen absolute w-full"></div>
       <div className="flex flex-col text-white turret-font w-full h-full items-start ml-4 justify-center space-y-5">
         <FaFileDownload className="text-4xl text-yellow-600 hover:scale-115 duration-150 transition-all hover:underline cursor-pointer" />

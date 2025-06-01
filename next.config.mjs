@@ -3,7 +3,7 @@ const nextConfig = {
   images: {
     remotePatterns: [
       new URL(
-        "https://img.freepik.com/premium-vector/male-face-avatar-icon-set-flat-design-social-media-profiles_1281173-3806.jpg?semt=ais_items_boosted&w=740"
+        "https://media.licdn.com/dms/image/v2/D5635AQEHkvzsMcNvyQ/profile-framedphoto-shrink_400_400/B56ZXzuLTTGsAc-/0/1743550723647?e=1749376800&v=beta&t=y8yrRgnMeZoh8iLl1IrosSQp8rycwtv7LbZbFsXjWiw"
       ),
     ],
   },

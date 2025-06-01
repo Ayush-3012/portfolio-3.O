@@ -7,7 +7,7 @@ import { Turret_Road } from "next/font/google";
 import { usePathname } from "next/navigation";
 
 const turretRoad = Turret_Road({
-  weight: ["800"],
+  weight: ["400"],
   subsets: ["latin"],
   variable: "--font-turret",
 });

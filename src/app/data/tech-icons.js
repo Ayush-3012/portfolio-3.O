@@ -11,4 +11,6 @@ export const icons = [
   { icon: "/assets/icons/redux.webp", alt: "redux" },
   { icon: "/assets/icons/nextjs.png", alt: "nextJs" },
   { icon: "/assets/icons/tailwind.png", alt: "tailwind" },
+  { icon: "/assets/icons/dsa.png", alt: "dsa" },
+  { icon: "/assets/icons/data analytics.png", alt: "data analytics" },
 ];

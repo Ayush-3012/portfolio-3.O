@@ -3,26 +3,12 @@
 @layer utilities {
   .clip-left-bracket {
     clip-path: polygon(100% 0%, 25% 50%, 100% 100%, 75% 100%, 0% 50%, 75% 0);
-    background-image: linear-gradient(
-      to left,
-      #020913,
-      #00102d,
-      #001447,
-      #00125f,
-      #33178d
-    );
+    background-image: linear-gradient(to right, #11f0bd, #00b2ba, #007397, #00395c, #09031c);
   }
 
   .clip-right-bracket {
     clip-path: polygon(25% 0, 100% 50%, 25% 100%, 0 100%, 75% 50%, 0 0);
-    background-image: linear-gradient(
-      to right,
-      #020913,
-      #00102d,
-      #001447,
-      #00125f,
-      #33178d
-    );
+    background-image: linear-gradient(to left, #11f0bd, #00b2ba, #007397, #00395c, #09031c);
   }
 
   .turret-font {

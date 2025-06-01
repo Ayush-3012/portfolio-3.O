@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 export default function ProjectLayout({ children }) {
   return (
     <>
-      <div className="flex h-screen w-screen overflow-hidden bg-gradient-to-br from-black via-indigo-950 to-black">
+      <div className="flex h-screen w-screen overflow-hidden bg-gradient-to-br from-black via-fuchsia-950 to-black">
         <Navbar />
 
         <div className="flex-1 overflow-y-auto">{children}</div>
