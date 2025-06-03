@@ -8,7 +8,7 @@ export default function ContactLayout({ children }) {
       <div className="flex h-screen w-screen overflow-hidden bg-gradient-to-br from-black via-red-950 to-black">
         <Navbar />
 
-        <div className="flex-1 overflow-y-auto">{children}</div>
+        <div className="flex-1 overflow-y-auto turret-font">{children}</div>
 
         <Footer />
       </div>

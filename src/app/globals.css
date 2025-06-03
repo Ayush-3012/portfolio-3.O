@@ -3,15 +3,49 @@
 @layer utilities {
   .clip-left-bracket {
     clip-path: polygon(100% 0%, 25% 50%, 100% 100%, 75% 100%, 0% 50%, 75% 0);
-    background-image: linear-gradient(to right, #11f0bd, #00b2ba, #007397, #00395c, #09031c);
+    background-image: linear-gradient(
+      to right,
+      #11f0bd,
+      #00b2ba,
+      #007397,
+      #00395c,
+      #09031c
+    );
   }
 
   .clip-right-bracket {
     clip-path: polygon(25% 0, 100% 50%, 25% 100%, 0 100%, 75% 50%, 0 0);
-    background-image: linear-gradient(to left, #11f0bd, #00b2ba, #007397, #00395c, #09031c);
+    background-image: linear-gradient(
+      to left,
+      #11f0bd,
+      #00b2ba,
+      #007397,
+      #00395c,
+      #09031c
+    );
   }
 
   .turret-font {
     font-family: var(--font-turret), system-ui, sans-serif;
   }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f0f0f;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f472b6;
+  border-radius: 10px;
+  border: 2px solid #0f0f0f;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fb7185;
 }
