@@ -28,7 +28,7 @@ const Projects = () => {
           ) => (
             <div
               key={index}
-              className="relative bg-gradient-to-tr from-emerald-400 via-slate-950 to-emerald-400 flex group flex-col rounded-se-xl rounded-es-xl p-4 transition-all shadow-[1px_1px_10px] hover:shadow-rose-500 hover:-translate-y-2 hover:rounded-se-none hover:rounded-es-none hover:rounded-ee-xl hover:rounded-ss-xl"
+              className="relative bg-gradient-to-tr from-black via-fuchsia-950 to-black flex group flex-col rounded-se-xl rounded-es-xl p-4 transition-all shadow-[1px_1px_10px] hover:shadow-rose-500 hover:-translate-y-2 hover:rounded-se-none hover:rounded-es-none hover:rounded-ee-xl hover:rounded-ss-xl"
             >
               <div className="max-w-full max-h-full w-96 h-48 transition-all grayscale group-hover:grayscale-0 group-hover:opacity-50 group-hover:scale-105 duration-150">
                 <Image
@@ -65,10 +65,10 @@ const Projects = () => {
               </div>
 
               <div className="p-2">
-                <h3 className=" text-4xl mb-2 transition-all  font-extrabold text-rose-300 group-hover:text-red-400 group-hover:underline group-hover:scale-105">
+                <h3 className=" text-4xl mb-2 uppercase transition-all  font-extrabold text-rose-300 group-hover:text-red-400 group-hover:underline group-hover:scale-105">
                   {title}
                 </h3>
-                <span className="text-4xl text-teal-300 font-bold tracking-wider">
+                <span className="text-2xl text-teal-300 font-bold tracking-wider">
                   {type}
                 </span>
                 <p className="text-white font-extrabold">{description}</p>
