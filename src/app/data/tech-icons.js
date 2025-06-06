@@ -1,19 +1,25 @@
 export const icons = {
   frontend: [
-    { icon: "/assets/icons/react.png", alt: "react" },
-    { icon: "/assets/icons/redux.webp", alt: "redux" },
-    { icon: "/assets/icons/tailwind.png", alt: "tailwind" },
-    { icon: "/assets/icons/html.webp", alt: "html" },
-    { icon: "/assets/icons/css.webp", alt: "css" },
+    { icon: "/assets/icons/react.png", alt: "react", title: "React" },
+    { icon: "/assets/icons/redux.webp", alt: "redux", title: "Redux" },
+    { icon: "/assets/icons/tailwind.png", alt: "tailwind", title: "Tailwind" },
+    { icon: "/assets/icons/html.webp", alt: "html", title: "HTML" },
+    { icon: "/assets/icons/css.webp", alt: "css", title: "CSS" },
+    { icon: "/assets/icons/sass.png", alt: "scss", title: "SCSS" },
+    { icon: "/assets/icons/jquery.png", alt: "jquery", title: "JQuery" },
   ],
   backend: [
-    { icon: "/assets/icons/nextjs.png", alt: "nextJs" },
-    { icon: "/assets/icons/express.png", alt: "expressjs" },
-    { icon: "/assets/icons/node.png", alt: "nodejs" },
+    { icon: "/assets/icons/nextjs.png", alt: "nextJs", title: "Next Js" },
+    {
+      icon: "/assets/icons/express.png",
+      alt: "expressjs",
+      title: "Express Js",
+    },
+    { icon: "/assets/icons/node.png", alt: "nodejs", title: "Node Js" },
   ],
   database: [
-    { icon: "/assets/icons/mongodb.png", alt: "mongodb" },
-    { icon: "/assets/icons/mysql.png", alt: "mysql" },
+    { icon: "/assets/icons/mongodb.png", alt: "mongodb", title: "Mongo Db" },
+    { icon: "/assets/icons/mysql.png", alt: "mysql", title: "My SQL" },
   ],
   Languages: [
     { icon: "/assets/icons/c++.png", alt: "C++" },

@@ -1,81 +1,74 @@
-import Image from "next/image";
+"use client";
 import { myProjects } from "../data/projects-data";
-import { FaGithub, FaLink } from "react-icons/fa";
-import Link from "next/link";
+import { useState } from "react";
+import ProjectCard from "../components/ProjectCard";
 
 const Projects = () => {
+  const [selectedCategory, setSelectedCategory] = useState("Web Development");
+  const [selectedSubCategory, setSelectedSubCategory] = useState("MERN Stack");
+
+  const handleCategoryClick = (category) => {
+    setSelectedSubCategory(null);
+    setSelectedCategory((prev) => (prev === category ? null : category));
+  };
+
+  const handleSubCategoryClick = (subcategory) => {
+    setSelectedSubCategory((prev) =>
+      prev === subcategory ? null : subcategory
+    );
+  };
+
   return (
     <>
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center mx-10 ">
         <h1 className="text-4xl font-extrabold text-rose-300 shadow-[1px_1px_10px] shadow-rose-500 rounded-xl px-4 py-2 w-fit my-4">
           My Projects
         </h1>
       </div>
-      <div className="p-4 grid grid-cols-3 gap-5 mx-10 my-4 overflow-y-auto h-[80%]">
-        {myProjects.map(
-          (
-            {
-              title,
-              img,
-              alt,
-              tech_stacks,
-              githubLink,
-              deployedLink,
-              type,
-              description,
-            },
-            index
-          ) => (
-            <div
-              key={index}
-              className="relative bg-gradient-to-tr from-black via-fuchsia-950 to-black flex group flex-col rounded-se-xl rounded-es-xl p-4 transition-all shadow-[1px_1px_10px] hover:shadow-rose-500 hover:-translate-y-2 hover:rounded-se-none hover:rounded-es-none hover:rounded-ee-xl hover:rounded-ss-xl"
-            >
-              <div className="max-w-full max-h-full w-96 h-48 transition-all grayscale group-hover:grayscale-0 group-hover:opacity-50 group-hover:scale-105 duration-150">
-                <Image
-                  src={img}
-                  alt={alt}
-                  fill
-                  className="rounded-ee-xl rounded-ss-xl"
-                />
-              </div>
-              <div className="w-full h-52 absolute flex flex-col left-0 top-0 rounded-es-xl transition-all group-hover:opacity-100 opacity-0">
-                <p className="text-white font-extrabold rounded-ss-xl w-full tracking-widest p-2 bg-rose-500">
-                  {tech_stacks}
-                </p>
-                <div className="flex h-48 rounded-es-xl items-center justify-center gap-6">
-                  {githubLink && (
-                    <Link
-                      href={githubLink}
-                      className="bg-gradient-to-tr from-rose-500 via-white to-rose-500 rounded-xl w-16 h-16 flex items-center hover:text-rose-500 justify-center cursor-pointer transition-all  hover:scale-110 duration-150"
-                      target="_blank"
-                    >
-                      <FaGithub className="text-4xl  text-black-400 my-4 hover:scale-110 transition-all" />
-                    </Link>
-                  )}
-                  {deployedLink && (
-                    <Link
-                      href={deployedLink}
-                      className="bg-gradient-to-tl from-rose-500 via-white to-rose-500 rounded-xl w-16 h-16 flex items-center justify-center cursor-pointer transition-all hover:text-rose-500 hover:scale-110 duration-150"
-                      target="_blank"
-                    >
-                      <FaLink className="text-4xl text-black-400 my-4  hover:scale-110 transition-all" />
-                    </Link>
-                  )}
-                </div>
-              </div>
 
-              <div className="p-2">
-                <h3 className=" text-4xl mb-2 uppercase transition-all  font-extrabold text-rose-300 group-hover:text-red-400 group-hover:underline group-hover:scale-105">
-                  {title}
-                </h3>
-                <span className="text-2xl text-teal-300 font-bold tracking-wider">
-                  {type}
-                </span>
-                <p className="text-white font-extrabold">{description}</p>
+      <div className="flex flex-col p-2 gap-2 h-full">
+        <div className="flex justify-around gap-2  items-center">
+          <div className="flex flex-col w-fit flex-wrap gap-2 justify-center">
+            {Object.keys(myProjects).map((category) => (
+              <div
+                key={category}
+                className={`cursor-pointer px-4 py-1 rounded-lg hover:translate-x-2 duration-150 transition-all text-white text-xl bg-indigo-400 items-center justify-center flex hover:bg-purple-500 ${
+                  selectedCategory === category && "bg-rose-500"
+                }`}
+                onClick={() => handleCategoryClick(category)}
+              >
+                {category}
               </div>
+            ))}
+          </div>
+
+          {selectedCategory && (
+            <div className="flex flex-wrap flex-1 gap-4 border-l-2 border-white justify-center">
+              {Object.keys(myProjects[selectedCategory]).map((subCat) => (
+                <div
+                  key={subCat}
+                  className={`cursor-pointer px-2 py-0.5 rounded-lg text-lg hover:scale-x-110 duration-150 transition-all flex justify-center items-center text-white bg-cyan-500 hover:bg-fuchsia-400 ${
+                    selectedSubCategory === subCat && "bg-rose-500"
+                  }`}
+                  onClick={() => handleSubCategoryClick(subCat)}
+                >
+                  {subCat}
+                </div>
+              ))}
             </div>
-          )
-        )}
+          )}
+        </div>
+        <div className="overflow-y-auto border-t-2 border-white my-2 mx-4 h-[70%]">
+          {selectedCategory && selectedSubCategory && (
+            <div className="grid md:grid-cols-2  lg:grid-cols-3 gap-6 mt-4">
+              {myProjects[selectedCategory][selectedSubCategory].map(
+                (project) => (
+                  <ProjectCard key={project.title} {...project} />
+                )
+              )}
+            </div>
+          )}
+        </div>
       </div>
     </>
   );

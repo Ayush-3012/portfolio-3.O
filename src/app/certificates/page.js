@@ -13,7 +13,7 @@ const Certificates = () => {
         {myCertificates.map(({ img, title, description }, index) => (
           <div
             key={index}
-            className="relative bg-gradient-to-tl from-cyan-400 via-slate-950 to-cyan-400 flex group flex-col rounded-se-xl rounded-es-xl p-4 transition-all shadow-[1px_1px_10px] hover:shadow-green-500 hover:-translate-y-2 hover:rounded-se-none hover:rounded-es-none hover:rounded-ee-xl hover:rounded-ss-xl"
+            className="relative bg-gradient-to-tl from-black via-amber-950 to-black flex group flex-col rounded-se-xl rounded-es-xl p-4 transition-all shadow-[1px_1px_10px] hover:shadow-green-500 hover:-translate-y-2 hover:rounded-se-none hover:rounded-es-none hover:rounded-ee-xl hover:rounded-ss-xl"
           >
             <div className="max-w-full max-h-full w-96 h-48 transition-all grayscale group-hover:grayscale-0 group-hover:scale-105 rounded-ee-xl rounded-ss-xl group-hover:shadow-[1px_1px_10px] group-hover:shadow-white duration-200">
               <Image
