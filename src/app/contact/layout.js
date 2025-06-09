@@ -10,7 +10,7 @@ export default function ContactLayout({ children }) {
 
         <div className="flex-1 overflow-y-auto turret-font">{children}</div>
 
-        <Footer />
+        <Footer />  
       </div>
     </>
   );

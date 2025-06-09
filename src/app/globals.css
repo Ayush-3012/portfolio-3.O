@@ -28,6 +28,11 @@
   .turret-font {
     font-family: var(--font-turret), system-ui, sans-serif;
   }
+
+  .clip-poly {
+    clip-path: polygon(0 0, 40% 0, 100% 100%, 0% 100%);
+    background-image: linear-gradient(to left, #e5004e, #d26b0c, #a49f1a, #68c470, #0cddcb);
+  }
 }
 
 ::-webkit-scrollbar {
