@@ -5,6 +5,7 @@ import { stats } from "../data/stats";
 import { icons } from "../data/tech-icons";
 import { ImPushpin } from "react-icons/im";
 import { motion } from "framer-motion";
+import RandomIcon from "../components/RandomIcon";
 
 export default function About() {
   const skillSections = Object.entries(icons);
@@ -22,7 +23,7 @@ export default function About() {
           </h1>
         </div>
         <div className="flex gap-4">
-          {/* <div className="flex-1 flex items-center justify-center"> */}
+          <RandomIcon />
           <motion.div
             className="w-[800px] h-[600px] m-4 bg-gradient-to-tr  shadow-[1px_1px_10px] shadow-white hover:shadow-rose-400 py-4 rounded-xl  overflow-hidden"
             initial={{ y: -800 }}
@@ -80,7 +81,6 @@ export default function About() {
               ))}
             </div>
           </motion.div>
-          {/* </div> */}
           <motion.div
             className="grid items-center justify-center relative grid-cols-2 gap-8 mr-6"
             initial={{ y: 800 }}
@@ -105,7 +105,7 @@ export default function About() {
                 >
                   <ImPushpin className="text-rose-600 absolute right-0 text-3xl z-10" />
                   <div className="flex overflow-hidden h-full">
-                    <div className="w-[30%] bg-cyan-600 flex justify-center items-start">
+                    <div className="w-[30%] bg-rose-400 flex justify-center items-start">
                       <Image
                         src={icon}
                         alt={alt}
@@ -115,10 +115,10 @@ export default function About() {
                       />
                     </div>
                     <div
-                      className={`w-[70%] text-center flex bg-gradient-to-tr from-black via-gray-900 to-black flex-col justify-center items-center font-bold`}
+                      className={`w-[70%] text-center flex flex-col justify-center items-center font-bold`}
                     >
-                      <p className={`text-3xl text-teal-600 pt-6`}>{value}</p>
-                      <p className="uppercase text-lg text-sky-600 flex tracking-wide ">
+                      <p className={`text-3xl text-teal-400 pt-6`}>{value}</p>
+                      <p className="uppercase text-lg text-rose-400 flex tracking-wide ">
                         {label}
                       </p>
                     </div>

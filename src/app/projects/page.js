@@ -3,6 +3,7 @@ import { myProjects } from "../data/projects-data";
 import { useState } from "react";
 import ProjectCard from "../components/ProjectCard";
 import { motion } from "framer-motion";
+import RandomIcon from "../components/RandomIcon";
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("Web Development");
@@ -33,6 +34,7 @@ const Projects = () => {
         </div>
 
         <div className="flex flex-col p-2 gap-2 h-full">
+          <RandomIcon />
           <div className="flex justify-around gap-2  items-center">
             <motion.div
               className="flex flex-col w-fit flex-wrap gap-2 justify-center"

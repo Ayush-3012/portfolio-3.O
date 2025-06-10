@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { myCertificates } from "../data/certificates";
 import { motion } from "framer-motion";
+import RandomIcon from "../components/RandomIcon";
 
 const Certificates = () => {
   return (
@@ -18,11 +19,12 @@ const Certificates = () => {
           </h1>
         </div>
         <motion.div
-          className="p-4 grid grid-cols-3 gap-8 my-4 mx-10 overflow-y-auto h-[80%]"
+          className="p-4 grid grid-cols-3 gap-8 my-4 mx-10 overflow-y-auto h-[600px]"
           initial={{ y: 1000 }}
           animate={{ y: 0 }}
           transition={{ duration: 1, delay: 1, type: "spring", bounce: 0.6 }}
         >
+          <RandomIcon />
           {myCertificates.map(({ img, title, description }, index) => (
             <motion.div
               key={index}

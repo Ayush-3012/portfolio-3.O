@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import RandomIcon from "../components/RandomIcon";
 
 export default function Home() {
   return (
@@ -16,7 +17,9 @@ export default function Home() {
         </h1>
       </div>
       <div className="relative w-full h-screen overflow-hidden">
-        <div className="grid grid-cols-1 md:grid-cols-2 turret-font items-center justify-center gap-4 w-full h-full p-4">
+        <RandomIcon />
+
+        <div className="grid grid-cols-1 md:grid-cols-2 turret-font items-center justify-center gap-4 w-full h-full p-4 relative z-10">
           <motion.div
             className="flex flex-col gap-5 items-center justify-center"
             initial={{ x: 1500 }}
@@ -30,7 +33,7 @@ export default function Home() {
                 transition: { duration: 0.6, bounce: 0.6, type: "spring" },
               }}
             >
-              <div className="clip-poly absolute w-full z-0 h-full"></div>
+              <div className="clip-right-poly clip-left-poly absolute w-full z-0 h-full"></div>
               <Image
                 src="/assets/myImg-2.png"
                 alt="Ayush Kumar"
@@ -61,12 +64,12 @@ export default function Home() {
                 </span>{" "}
                 a{" "}
                 <span className="text-sky-400 group-hover:font-extrabold group-hover:underline">
-                  MERN
+                  MERN, NEXT JS
                 </span>{" "}
                 Stack Developer.
               </h1>
               <p className="text-xl leading-relaxed duration-150 transition-all max-w-2xl max-sm:text-base max-sm:text-center">
-                I&apos;m a recent{" "}
+                I&apos;m a skilled{" "}
                 <span className="text-rose-500">
                   B.Sc. (Hons.) Computer Science
                 </span>{" "}
@@ -76,9 +79,9 @@ export default function Home() {
                 </span>
                 , with strong programming skills in{" "}
                 <span className="text-fuchsia-500 group-hover:underline group-hover:font-extrabold">
-                  C++, JavaScript, Python, Machine Learning, and Data Science
+                  C++, JavaScript, Python, MERN Stack, Next Js,{" "}
                 </span>
-                . I have scored <span className="text-red-400">8.8 CGPA.</span>
+                with experience in building web applications.
               </p>
             </motion.div>
           </motion.div>

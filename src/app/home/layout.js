@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 export default function HomeLayout({ children }) {
   return (
     <>
-      <div className="flex h-screen w-screen overflow-hidden bg-gradient-to-br from-black via-emerald-950 to-black">
+      <div className="flex h-screen w-screen max-md:flex-col overflow-hidden bg-gradient-to-br from-black via-emerald-950 to-black">
         <Navbar />
 
         <div className="flex-1 turret-font">{children}</div>

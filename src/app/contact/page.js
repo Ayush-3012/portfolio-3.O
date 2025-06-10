@@ -2,6 +2,7 @@
 
 import { BsFillSendFill } from "react-icons/bs";
 import { motion } from "framer-motion";
+import RandomIcon from "../components/RandomIcon";
 
 const Contact = () => {
   return (
@@ -20,7 +21,7 @@ const Contact = () => {
           <p className="my-4 font-bold self-start text-2xl">
             Thanks For Visiting, <span className="text-[#00fff5]">Adios !</span>
           </p>
-
+          <RandomIcon />
           <motion.div
             className="p-8 w-fit shadow-[1px_1px_10px] shadow-white h-fit rounded-xl items-center justify-center flex flex-col"
             initial={{ scale: 0 }}
