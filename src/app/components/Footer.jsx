@@ -12,13 +12,14 @@ const Footer = () => {
 
   return (
     <motion.div
-      className="w-32 shadow-[1px_1px_20px] ronded-l-xl shadow-purple-700 relative"
+      className="shadow-[1px_1px_20px] ronded-r-xl shadow-purple-700 h-screen w-28 relative max-md:w-screen max-md:h-20"
       initial={{ x: -1800 }}
       animate={{ x: 0 }}
       transition={{ duration: 0.6 }}
     >
-      <div className=" clip-right-bracket h-screen absolute w-full"></div>
-      <div className="flex flex-col text-white turret-font w-full h-full items-start ml-4 justify-center space-y-5">
+      <div className="absolute inset-0 clip-right-bracket max-md:hidden"></div>
+      <div className="absolute inset-0 clip-bottom-bracket hidden max-md:block"></div>
+      <div className="flex flex-col text-white w-full h-full pl-2 z-50 items-start justify-center space-y-5 max-md:space-y-1 max-md:space-x-5 max-sm:space-x-3 max-md:flex-row max-md:pl-0">
         <MotionLink
           href={"https://www.linkedin.com/in/ayush-kumar-6137651b4/"}
           target="_blank"
@@ -30,7 +31,7 @@ const Footer = () => {
           }}
           className="rounded-xl p-0.5"
         >
-          <FaFileDownload className="text-4xl text-rose-400 cursor-pointer" />
+          <FaFileDownload className="text-3xl text-rose-400 cursor-pointer max-md:text-2xl" />
         </MotionLink>
         <MotionLink
           href={"https://www.linkedin.com/in/ayush-kumar-6137651b4/"}
@@ -43,7 +44,7 @@ const Footer = () => {
           }}
           className="rounded-xl p-0.5"
         >
-          <FaLinkedin className="text-4xl text-blue-600   cursor-pointer" />
+          <FaLinkedin className="text-4xl text-blue-600   cursor-pointer max-md:text-3xl max-sm:text-2xl" />
         </MotionLink>
         <MotionLink
           href={"https://github.com/Ayush-3012/"}
@@ -56,7 +57,7 @@ const Footer = () => {
           }}
           className="rounded-xl p-0.5"
         >
-          <FaSquareGithub className="text-4xl   cursor-pointer" />
+          <FaSquareGithub className="text-4xl   cursor-pointer max-md:text-3xl max-sm:text-2xl" />
         </MotionLink>
         <MotionLink
           href={"https://www.geeksforgeeks.org/user/ayushkumar_3012/"}
@@ -69,7 +70,7 @@ const Footer = () => {
           }}
           className="rounded-xl p-0.5"
         >
-          <SiGeeksforgeeks className="text-4xl text-green-600   cursor-pointer" />
+          <SiGeeksforgeeks className="text-4xl text-green-600   cursor-pointer max-md:text-3xl max-sm:text-2xl" />
         </MotionLink>
       </div>
     </motion.div>

@@ -50,7 +50,7 @@ export default function Index() {
         className={` z-10 bg-white/4 p-10 rounded-3xl shadow-xl border border-white/10`}
       >
         <motion.h1
-          className="text-5xl font-extrabold z-10 tracking-wide bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text text-center"
+          className="text-5xl font-extrabold z-10 tracking-wide bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text text-center max-sm:text-4xl"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}

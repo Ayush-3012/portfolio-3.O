@@ -14,7 +14,7 @@
   }
 
   .clip-top-bracket {
-    clip-path: polygon(100% 0%, 25% 50%, 100% 100%, 75% 100%, 0% 50%, 75% 0);
+    clip-path: polygon(0% 100%, 50% 25%, 100% 100%, 100% 75%, 50% 0%, 0% 75%);
     background-image: linear-gradient(
       to right,
       #11f0bd,
@@ -23,7 +23,18 @@
       #00395c,
       #09031c
     );
-    rotate: 90deg;
+  }
+
+  .clip-bottom-bracket {
+    clip-path: polygon(0% 0%, 50% 75%, 100% 0%, 100% 25%, 50% 100%, 0% 25%);
+    background-image: linear-gradient(
+      to left,
+      #11f0bd,
+      #00b2ba,
+      #007397,
+      #00395c,
+      #09031c
+    );
   }
 
   .clip-right-bracket {
