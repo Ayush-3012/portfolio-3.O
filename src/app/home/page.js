@@ -20,8 +20,7 @@ export default function Home() {
       <div className="relative w-full min-h-screen overflow-hidden max-lg:overflow-y-auto">
         <RandomIcon />
 
-        <div className="grid grid-cols-2 max-lg:grid-cols-1 turret-font items-center justify-center gap-8 w-full h-full p-4 relative z-10">
-          {/* Image Section */}
+        <div className="grid grid-cols-2 max-lg:grid-cols-1 my-20 turret-font items-center justify-center px-8 py-4 relative z-10 max-lg:my-10 max-md:my-5 max-sm:my-2 max-lg:gap-4 max-md:gap-6">
           <motion.div
             className="flex flex-col gap-5 items-center justify-center"
             initial={{ x: 1500 }}
@@ -29,13 +28,13 @@ export default function Home() {
             transition={{ duration: 0.6, bounce: 0.6, type: "spring" }}
           >
             <motion.div
-              className="w-[250px] sm:w-[300px] md:w-[350px] relative aspect-[3/4] overflow-hidden rounded-xl shadow-[0_0_20px] hover:shadow-pink-500 shadow-white"
+              className="max-sm:w-[250px] max-md:w-[300px] w-[350px] relative aspect-[3/4] overflow-hidden rounded-xl shadow-[0_0_20px] hover:shadow-pink-500 shadow-white"
               whileHover={{
                 scale: 1.08,
                 transition: { duration: 0.6, bounce: 0.6, type: "spring" },
               }}
             >
-              <div className="clip-right-poly clip-left-poly absolute w-full z-0 h-full"></div>
+              <div className="clip-left-poly absolute w-full h-full"></div>
               <Image
                 src="/assets/myImg-2.png"
                 alt="Ayush Kumar"
@@ -46,12 +45,15 @@ export default function Home() {
             </motion.div>
           </motion.div>
 
-          {/* Text Section */}
           <motion.div
-            className="flex flex-col group w-fit max-w-[90vw] h-fit rounded-xl shadow-[0_0_10px] shadow-white hover:shadow-pink-500 text-white items-center justify-center px-8 py-12"
+            className="flex flex-col group w-fit max-w-[90vw] h-fit rounded-xl shadow-[0_0_10px] shadow-white hover:shadow-pink-500 text-white items-center justify-center px-8 py-12 max-lg:py-10 max-lg:px-7 max-md:py-8 max-md:px-5 max-sm:py-4 max-sm:px-3"
             initial={{ x: -1500 }}
             animate={{ x: 0 }}
             transition={{ duration: 0.6, bounce: 0.6, type: "spring" }}
+            whileHover={{
+              scale: 1.08,
+              transition: { duration: 0.6, bounce: 0.6, type: "spring" },
+            }}
           >
             <motion.div
               className="group-hover:-translate-y-2 p-4"
@@ -60,7 +62,7 @@ export default function Home() {
                 transition: { type: "spring", bounce: 0.6, duration: 0.6 },
               }}
             >
-              <h1 className="text-4xl group-hover:scale-110 duration-150 transition-all mb-6 text-center max-sm:text-2xl">
+              <h1 className="text-4xl group-hover:scale-110 duration-150 transition-all mb-6 text-center max-md:text-3xl max-sm:text-2xl">
                 Hi, I&apos;m{" "}
                 <span className="text-rose-500 group-hover:font-extrabold group-hover:underline">
                   Ayush Kumar
@@ -71,7 +73,7 @@ export default function Home() {
                 </span>{" "}
                 Stack Developer.
               </h1>
-              <p className="text-xl leading-relaxed duration-150 transition-all text-center max-sm:text-base">
+              <p className="text-xl leading-relaxed duration-150 transition-all text-center max-md:text-lg  max-sm:text-base">
                 I&apos;m a skilled{" "}
                 <span className="text-rose-500">
                   B.Sc. (Hons.) Computer Science

@@ -13,17 +13,17 @@ const Contact = () => {
         transition={{ duration: 1, delay: 0.6, type: "spring", bounce: 0.6 }}
       >
         <div className="flex items-center justify-center">
-          <h1 className="text-4xl uppercase underline font-extrabold text-rose-300 shadow-[1px_1px_10px] shadow-rose-500 rounded-xl px-4 py-2 w-fit my-4">
+          <h1 className="text-4xl uppercase underline font-extrabold text-rose-300 shadow-[1px_1px_10px] shadow-rose-500 rounded-xl px-4 py-2 w-fit my-4 max-md:text-3xl max-sm:text-2xl">
             Contact Me
           </h1>
         </div>
         <div className="flex w-full flex-col gap-3 p-4 text-white items-center justify-center max-lg:flex-col ">
-          <p className="my-4 font-bold self-start text-2xl">
+          <p className="my-4 font-bold self-start text-2xl max-sm:text-xl">
             Thanks For Visiting, <span className="text-[#00fff5]">Adios !</span>
           </p>
           <RandomIcon />
           <motion.div
-            className="p-8 w-fit shadow-[1px_1px_10px] shadow-white h-fit rounded-xl items-center justify-center flex flex-col"
+            className="p-8 w-fit shadow-[1px_1px_10px] shadow-white h-fit rounded-xl items-center justify-center flex flex-col max-md:w-full max-md:p-6 max-sm:p-4"
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{
@@ -33,13 +33,13 @@ const Contact = () => {
               bounce: 0.6,
             }}
           >
-            <form className="space-y-6 items-center justify-center flex flex-col">
-              <div className="flex flex-col lg:flex-row gap-4">
+            <form className="space-y-6  items-center justify-center flex flex-col max-sm:space-y-3">
+              <div className="flex max-sm:flex-col w-full gap-4 max-sm:gap-2">
                 <input
                   type="text"
                   placeholder="YOUR NAME"
                   required
-                  className="w-fulltext-white text-lg font-medium rounded-tl-3xl rounded-br-3xl px-4 py-2 focus:outline-none shadow-[1px_1px_10px] shadow-cyan-400 focus:shadow-rose-400 focus:-translate-y-2 duration-150 transition-all"
+                  className="w-full text-white text-lg font-medium rounded-tl-3xl rounded-br-3xl px-4 py-2 focus:outline-none shadow-[1px_1px_10px] shadow-cyan-400 focus:shadow-rose-400 focus:-translate-y-2 duration-150 transition-all"
                 />
                 <input
                   type="email"
