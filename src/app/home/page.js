@@ -12,7 +12,7 @@ export default function Home() {
       transition={{ duration: 1, delay: 0.6, type: "spring", bounce: 0.6 }}
     >
       <div className="flex items-center justify-center">
-        <h1 className="text-4xl uppercase underline font-extrabold text-rose-300 shadow-[1px_1px_10px] shadow-rose-500 rounded-xl px-4 py-2 w-fit mt-4">
+        <h1 className="text-4xl uppercase underline font-extrabold text-rose-300 shadow-[1px_1px_10px] shadow-rose-500 rounded-xl px-4 py-2 w-fit mt-4 max-md:text-3xl max-sm:text-2xl">
           Home
         </h1>
       </div>
@@ -69,9 +69,9 @@ export default function Home() {
                 </span>{" "}
                 a{" "}
                 <span className="text-sky-400 group-hover:font-extrabold group-hover:underline">
-                  MERN, NEXT JS
+                  MERN Stack, NEXT JS
                 </span>{" "}
-                Stack Developer.
+                Developer.
               </h1>
               <p className="text-xl leading-relaxed duration-150 transition-all text-center max-md:text-lg  max-sm:text-base">
                 I&apos;m a skilled{" "}

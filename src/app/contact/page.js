@@ -34,31 +34,31 @@ const Contact = () => {
             }}
           >
             <form className="space-y-6  items-center justify-center flex flex-col max-sm:space-y-3">
-              <div className="flex max-sm:flex-col w-full gap-4 max-sm:gap-2">
+              <div className="flex max-md:flex-col w-full gap-4 max-sm:gap-2">
                 <input
                   type="text"
                   placeholder="YOUR NAME"
                   required
-                  className="w-full text-white text-lg font-medium rounded-tl-3xl rounded-br-3xl px-4 py-2 focus:outline-none shadow-[1px_1px_10px] shadow-cyan-400 focus:shadow-rose-400 focus:-translate-y-2 duration-150 transition-all"
+                  className="w-full max-md:w-96 max-sm:w-64 text-white text-lg font-medium rounded-tl-3xl rounded-br-3xl px-4 py-2 focus:outline-none shadow-[1px_1px_10px] shadow-cyan-400 focus:shadow-rose-400 focus:-translate-y-2 duration-150 transition-all"
                 />
                 <input
                   type="email"
                   placeholder="YOUR E-MAIL"
                   required
-                  className="w-full text-white text-lg font-medium rounded-tl-3xl rounded-br-3xl px-4 py-2 focus:outline-none  shadow-[1px_1px_10px] shadow-cyan-400 focus:shadow-rose-400 focus:-translate-y-2 duration-150 transition-all"
+                  className="w-full max-md:w-96 max-sm:w-64 text-white text-lg font-medium rounded-tl-3xl rounded-br-3xl px-4 py-2 focus:outline-none  shadow-[1px_1px_10px] shadow-cyan-400 focus:shadow-rose-400 focus:-translate-y-2 duration-150 transition-all"
                 />
               </div>
               <input
                 type="text"
                 placeholder="ENTER SUBJECT"
                 required
-                className="w-full text-white text-lg font-medium rounded-tl-3xl rounded-br-3xl px-4 py-2 focus:outline-none  shadow-[1px_1px_10px] shadow-cyan-400 focus:shadow-rose-400 focus:-translate-y-2 duration-150 transition-all"
+                className="w-full max-md:w-96 max-sm:w-64 text-white text-lg font-medium rounded-tl-3xl rounded-br-3xl px-4 py-2 focus:outline-none  shadow-[1px_1px_10px] shadow-cyan-400 focus:shadow-rose-400 focus:-translate-y-2 duration-150 transition-all"
               />
               <textarea
                 name="Message"
                 rows="8"
                 placeholder="Message Here..."
-                className="w-full text-white text-lg font-medium rounded-tl-3xl rounded-br-3xl px-4 py-2 focus:outline-none shadow-[1px_1px_10px] shadow-cyan-400 focus:shadow-rose-400 focus:-translate-y-2 duration-150 transition-all resize-none"
+                className="w-full max-md:w-96 max-sm:w-64 text-white text-lg font-medium rounded-tl-3xl rounded-br-3xl px-4 py-2 focus:outline-none shadow-[1px_1px_10px] shadow-cyan-400 focus:shadow-rose-400 focus:-translate-y-2 duration-150 transition-all resize-none"
               ></textarea>
 
               <motion.button

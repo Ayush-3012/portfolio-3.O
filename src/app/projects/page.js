@@ -67,7 +67,7 @@ const Projects = () => {
 
             {selectedCategory && (
               <motion.div
-                className="flex flex-wrap flex-1 gap-4 max-lg:gap-3 max-md:gap-2 max-sm:gap-1 border-l-2 border-white justify-center"
+                className="flex flex-wrap flex-1 gap-4 max-lg:gap-3 max-md:gap-2 max-sm:gap-1 lg:border-l-2 max-lg:border-t-2 border-white max-lg:pt-2 justify-center"
                 initial={{ y: 800 }}
                 animate={{ y: 0 }}
                 transition={{
