@@ -33,7 +33,18 @@ const Contact = () => {
               bounce: 0.6,
             }}
           >
-            <form className="space-y-6  items-center justify-center flex flex-col max-sm:space-y-3">
+            <form
+              action="https://formsubmit.co/011d87731e83a3193af6bef45e49efc8"
+              method="POST"
+              className="space-y-6  items-center justify-center flex flex-col max-sm:space-y-3"
+            >
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="box" />
+              <input
+                type="hidden"
+                name="_subject"
+                value="New message from your portfolio!"
+              />
               <div className="flex max-md:flex-col w-full gap-4 max-sm:gap-2">
                 <input
                   type="text"
