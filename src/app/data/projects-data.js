@@ -1,6 +1,6 @@
 export const myProjects = {
   "Web Development": {
-    "MERN": [
+    MERN: [
       {
         title: "HireMe",
         img: "/assets/projects/hireme.jpg",
@@ -36,6 +36,16 @@ export const myProjects = {
       },
     ],
     "NextJS || React": [
+      {
+        title: "Portfolio-Ayush3012",
+        img: "/assets/projects/portfolio-next.jpg",
+        alt: "Portfolio-Ayush3012",
+        tech_stacks:
+          "JavaScript, NextJs, ReactJs, TailwindCss, Vercel, Framer-Motion",
+        githubLink: "https://github.com/Ayush-3012/portfolio-3.O",
+        deployedLink: "https://portfolio-ayush3012.vercel.app/",
+        description: "New Personal portfolio using next js and latest tech.",
+      },
       {
         title: "Box-Office-NextJs",
         img: "/assets/projects/box-office-nextjs.jpg",

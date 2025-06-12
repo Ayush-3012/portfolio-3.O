@@ -38,7 +38,7 @@ const Footer = () => {
       <div className="absolute inset-0 clip-bottom-bracket hidden max-md:block"></div>
       <div className="flex flex-col text-white w-full h-full pl-2 z-50 items-start justify-center space-y-5 max-md:space-y-1 max-md:space-x-5 max-sm:space-x-3 max-md:flex-row max-md:pl-0">
         <MotionLink
-          href={"/assets/myImg-2.png"}
+          href={"/assets/Ayush Kumar - IT.pdf"}
           target="_blank"
           download
           whileHover={{
