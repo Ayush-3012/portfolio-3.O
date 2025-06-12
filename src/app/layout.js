@@ -37,6 +37,10 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en" className={`${turretRoad.variable}`}>
+      <head>
+        <title>Portfolio - Ayush-3012</title>
+        <link rel="icon" href="./logo.png" />
+      </head>
       <body suppressHydrationWarning>
         <div className="flex h-screen turret-font w-screen overflow-hidden bg-gradient-to-br from-black via-slate-950 to-black max-md:flex-col">
           <Navbar />
