@@ -42,6 +42,11 @@ const Contact = () => {
               <input type="hidden" name="_template" value="box" />
               <input
                 type="hidden"
+                name="_next"
+                value="https://portfolio-ayush3012.vercel.app/"
+              />
+              <input
+                type="hidden"
                 name="_subject"
                 value="New message from your portfolio!"
               />
@@ -49,12 +54,14 @@ const Contact = () => {
                 <input
                   type="text"
                   placeholder="YOUR NAME"
+                  name="name"
                   required
                   className="w-full max-md:w-96 max-sm:w-64 text-white text-lg font-medium rounded-tl-3xl rounded-br-3xl px-4 py-2 focus:outline-none shadow-[1px_1px_10px] shadow-cyan-400 focus:shadow-rose-400 focus:-translate-y-2 duration-150 transition-all"
                 />
                 <input
                   type="email"
                   placeholder="YOUR E-MAIL"
+                  name="email"
                   required
                   className="w-full max-md:w-96 max-sm:w-64 text-white text-lg font-medium rounded-tl-3xl rounded-br-3xl px-4 py-2 focus:outline-none  shadow-[1px_1px_10px] shadow-cyan-400 focus:shadow-rose-400 focus:-translate-y-2 duration-150 transition-all"
                 />
@@ -62,6 +69,7 @@ const Contact = () => {
               <input
                 type="text"
                 placeholder="ENTER SUBJECT"
+                name="subject"
                 required
                 className="w-full max-md:w-96 max-sm:w-64 text-white text-lg font-medium rounded-tl-3xl rounded-br-3xl px-4 py-2 focus:outline-none  shadow-[1px_1px_10px] shadow-cyan-400 focus:shadow-rose-400 focus:-translate-y-2 duration-150 transition-all"
               />

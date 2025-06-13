@@ -57,6 +57,18 @@ export const myProjects = {
           "Get your fav shows details on just one click and save them.",
       },
       {
+        title: "ShoppyGlobe",
+        img: "/assets/projects/shoppyglobe.jpg",
+        alt: "ShoppyGlobe",
+        tech_stacks:
+          "React Js, Redux, Tailwind, Framer Motion, React Router, Vercel,",
+        githubLink:
+          "https://github.com/Ayush-3012/ShoppyGlobe-Ayush3012/tree/main/frontend",
+        deployedLink: "https://shoppy-globe-ayush3012.vercel.app/",
+        description:
+          "A sleek and responsive full-stack E-commerce application built using React, Redux Toolkit, and Tailwind CSS. It allows users to browse products, view product details, add items to the cart, manage quantity, and proceed to checkout.",
+      },
+      {
         title: "BeyondChat-AIBot",
         img: "/assets/projects/beyondchat-aibot.jpg",
         alt: "BeyondChat-AIBot",
