@@ -50,7 +50,7 @@
   }
 
   .turret-font {
-    font-family: var(--font-turret), system-ui, sans-serif;
+    font-family: var(--font-turret), c;
   }
 
   .clip-left-poly {

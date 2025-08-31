@@ -1,6 +1,17 @@
 export const myProjects = {
   "Web Development": {
-    MERN: [
+    "FullStack || MERN": [
+      {
+        title: "CodeCircle-Ayush3012",
+        img: "/assets/projects/codecircle.jpg",
+        alt: "CodeCircle-Ayush3012",
+        tech_stacks:
+          "NextJs, TypeScript, Prisma, Socket.io, ReactJs, TailwindCss, MongoDB, JavaScript, Cloudinary",
+        githubLink: "https://github.com/Ayush-3012/CodeCircle",
+        deployedLink: "https://codecircle-iozo.onrender.com/",
+        description:
+          "A platform for developers to collaborate and share knowledge.",
+      },
       {
         title: "HireMe",
         img: "/assets/projects/hireme.jpg",
@@ -36,6 +47,17 @@ export const myProjects = {
       },
     ],
     "NextJS || React": [
+      {
+        title: "CodeCircle-Ayush3012",
+        img: "/assets/projects/codecircle.jpg",
+        alt: "CodeCircle-Ayush3012",
+        tech_stacks:
+          "NextJs, TypeScript, Prisma, Socket.io, ReactJs, TailwindCss, MongoDB, JavaScript, Cloudinary",
+        githubLink: "https://github.com/Ayush-3012/CodeCircle",
+        deployedLink: "https://codecircle-iozo.onrender.com/",
+        description:
+          "A platform for developers to collaborate and share knowledge.",
+      },
       {
         title: "Portfolio-Ayush3012",
         img: "/assets/projects/portfolio-next.jpg",

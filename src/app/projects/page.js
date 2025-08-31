@@ -7,7 +7,7 @@ import RandomIcon from "../components/RandomIcon";
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("Web Development");
-  const [selectedSubCategory, setSelectedSubCategory] = useState("MERN");
+  const [selectedSubCategory, setSelectedSubCategory] = useState("FullStack || MERN");
 
   const handleCategoryClick = (category) => {
     setSelectedSubCategory(null);
