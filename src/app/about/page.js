@@ -6,6 +6,7 @@ import { icons } from "../data/tech-icons";
 import { ImPushpin } from "react-icons/im";
 import { motion } from "framer-motion";
 import RandomIcon from "../components/RandomIcon";
+import PortfolioHighlights from "../components/PortfolioHighlights";
 
 export default function About() {
   const skillSections = Object.entries(icons);
@@ -52,10 +53,10 @@ export default function About() {
                     {skillIcons.map(({ icon, alt, title }, i) => (
                       <motion.div
                         key={i}
-                        className={`group flex flex-col gap-2 max-sm:gap-1 p-2 min-w-[220px] max-md:min-w-[300px] max-sm:min-w-[230px] cursor-pointer items-center justify-center rounded-xl hover:-translate-y-2 hover:shadow-[1px_1px_10px] ${
+                        className={`group flex flex-col gap-2 max-sm:gap-1 p-2 min-w-[220px] max-md:min-w-[300px] max-sm:min-w-[230px] cursor-pointer items-center justify-center rounded-xl max-md:-translate-y-1 max-md:shadow-[1px_1px_10px] hover:-translate-y-2 hover:shadow-[1px_1px_10px] active:-translate-y-2 active:shadow-[1px_1px_10px] ${
                           i % 2
-                            ? "hover:shadow-red-400 text-red-400"
-                            : "hover:shadow-cyan-400 text-cyan-400"
+                            ? "max-md:shadow-red-400/60 hover:shadow-red-400 active:shadow-red-400 text-red-400"
+                            : "max-md:shadow-cyan-400/60 hover:shadow-cyan-400 active:shadow-cyan-400 text-cyan-400"
                         }`}
                         whileHover={{
                           translateY: "-8px",
@@ -72,7 +73,7 @@ export default function About() {
                           alt={alt}
                           width={120}
                           height={120}
-                          className={`grayscale group-hover:grayscale-0 duration-200 transition-all`}
+                          className="grayscale max-md:grayscale-0 group-hover:grayscale-0 active:grayscale-0 duration-200 transition-all"
                         />
                         <p className="uppercase font-extrabold max-sm:text-base text-xl">
                           {title}
@@ -133,6 +134,8 @@ export default function About() {
             ))}
           </motion.div>
         </div>
+
+        <PortfolioHighlights showExperience={false} />
       </motion.div>
     </>
   );

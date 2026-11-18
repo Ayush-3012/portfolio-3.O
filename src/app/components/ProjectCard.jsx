@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaLink } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const ProjectCard = ({
   title,
@@ -14,6 +17,7 @@ const ProjectCard = ({
   description,
 }) => {
   const MotionLink = motion(Link);
+  const [showImage, setShowImage] = useState(Boolean(img));
 
   return (
     <>
@@ -27,8 +31,24 @@ const ProjectCard = ({
           transition: { duration: 1, type: "spring", bounce: 0.6 },
         }}
       >
-        <div className="w-full h-48 rounded-ee-xl rounded-ss-xl relative overflow-hidden mb-4  group-hover:opacity-50 group-hover:scale-105 duration-150 group-hover:shadow-[0_0_10px] group-hover:shadow-white transition-all">
-          <Image src={img} alt={alt} fill className=" object-cover " />
+        <div className="w-full h-48 rounded-ee-xl rounded-ss-xl relative overflow-hidden mb-4 bg-slate-900/70 flex items-center justify-center group-hover:opacity-50 group-hover:scale-105 duration-150 group-hover:shadow-[0_0_10px] group-hover:shadow-white transition-all">
+          {showImage ? (
+            <Image
+              src={img}
+              alt={alt}
+              fill
+              className="object-cover"
+              onError={() => setShowImage(false)}
+            />
+          ) : (
+            <Image
+              src="/assets/icons/project.png"
+              alt={`${title} project`}
+              width={96}
+              height={96}
+              className="opacity-70 transition-all duration-200 group-hover:opacity-100 group-hover:scale-110"
+            />
+          )}
         </div>
         <div className="absolute bg-rose-500 flex left-0 top-0 p-2 w-full rounded-ss-xl group-hover:opacity-100 opacity-0">
           <p className="text-white text-sm font-extrabold rounded-ss-xl w-full tracking-widest p-2 ">

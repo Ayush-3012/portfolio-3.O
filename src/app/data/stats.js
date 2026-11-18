@@ -8,9 +8,9 @@ export const stats = [
   },
   {
     icon: "/assets/icons/programming.png",
-    alt: "Coding",
-    value: "5+",
-    label: "Years of Coding",
+    alt: "Experience",
+    value: "3+",
+    label: "Work Roles",
     angle: "-8deg",
   },
   {
@@ -23,7 +23,7 @@ export const stats = [
   {
     icon: "/assets/icons/skills.png",
     alt: "Skills",
-    value: "12+",
+    value: "20+",
     label: "Skills",
     angle: "8deg",
   },

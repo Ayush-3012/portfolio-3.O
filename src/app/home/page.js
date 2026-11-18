@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import RandomIcon from "../components/RandomIcon";
+import PortfolioHighlights from "../components/PortfolioHighlights";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
         </h1>
       </div>
 
-      <div className="relative w-full min-h-screen overflow-hidden max-lg:overflow-y-auto">
+      <div className="relative w-full min-h-screen overflow-y-auto">
         <RandomIcon />
 
         <div className="grid grid-cols-2 max-lg:grid-cols-1 my-20 turret-font items-center justify-center px-8 py-4 relative z-10 max-lg:my-10 max-md:my-5 max-sm:my-2 max-lg:gap-4 max-md:gap-6">
@@ -66,31 +67,32 @@ export default function Home() {
                 Hi, I&apos;m{" "}
                 <span className="text-rose-500 group-hover:font-extrabold group-hover:underline">
                   Ayush Kumar
-                </span>{" "}
-                a{" "}
+                </span>, a{" "}
                 <span className="text-sky-400 group-hover:font-extrabold group-hover:underline">
-                  MERN Stack, NEXT JS
+                  Full-Stack & Next.js
                 </span>{" "}
                 Developer.
               </h1>
-              <p className="text-xl leading-relaxed duration-150 transition-all text-center max-md:text-lg  max-sm:text-base">
-                I&apos;m a skilled{" "}
+              <p className="text-xl leading-relaxed duration-150 transition-all text-center max-md:text-lg max-sm:text-base">
+                I&apos;m a{" "}
                 <span className="text-rose-500">
                   B.Sc. (Hons.) Computer Science
                 </span>{" "}
                 graduate from{" "}
                 <span className="text-sky-400">
-                  Dyal Singh College, Delhi University
-                </span>
-                , with strong programming skills in{" "}
-                <span className="text-fuchsia-500 group-hover:underline group-hover:font-extrabold">
-                  C++, JavaScript, Python, MERN Stack, Next Js
+                  Dyal Singh College, University of Delhi
                 </span>{" "}
-                with experience in building web applications.
+                with experience building production web platforms, healthcare SaaS applications, and AI-powered products using{" "}
+                <span className="text-fuchsia-500 group-hover:underline group-hover:font-extrabold">
+                  Next.js, React, TypeScript, Node.js, MongoDB, SQL, and RAG-based AI
+                </span>
+                . I also have experience integrating APIs, real-time systems, and scalable backend workflows.
               </p>
             </motion.div>
           </motion.div>
         </div>
+
+        <PortfolioHighlights />
       </div>
     </motion.div>
   );

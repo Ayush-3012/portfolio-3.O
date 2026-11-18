@@ -10,8 +10,16 @@ const Projects = () => {
   const [selectedSubCategory, setSelectedSubCategory] = useState("FullStack || MERN");
 
   const handleCategoryClick = (category) => {
-    setSelectedSubCategory(null);
-    setSelectedCategory((prev) => (prev === category ? null : category));
+    setSelectedCategory((prevCategory) => {
+      if (prevCategory === category) {
+        setSelectedSubCategory(null);
+        return null;
+      }
+
+      const firstSubCategory = Object.keys(myProjects[category])[0];
+      setSelectedSubCategory(firstSubCategory);
+      return category;
+    });
   };
 
   const handleSubCategoryClick = (subcategory) => {

@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { FaCode, FaGraduationCap, FaHome } from "react-icons/fa";
+import { FaCode, FaGraduationCap, FaHome, FaBriefcase } from "react-icons/fa";
 import { BiSolidBrain } from "react-icons/bi";
 import { IoCallSharp } from "react-icons/io5";
 import { motion } from "framer-motion";
@@ -61,6 +61,16 @@ const Navbar = () => {
           >
             <span className="max-md:hidden">About</span>
             <BiSolidBrain className="hidden max-md:block text-4xl max-md:text-3xl max-sm:text-2xl" />
+          </Link>
+          <Link
+            href="/experience"
+            className={`duration-150
+            transition-all text-md font-extrabold flex z-50 items-center justify-center hover:underline hover:text-emerald-500 hover:scale-110 ${
+              pathname === "/experience" && "text-rose-500"
+            }`}
+          >
+            <span className="max-md:hidden">Experience</span>
+            <FaBriefcase className="hidden max-md:block text-4xl max-md:text-3xl max-sm:text-2xl" />
           </Link>
           <Link
             href="/projects"

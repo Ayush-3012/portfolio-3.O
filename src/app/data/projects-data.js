@@ -2,124 +2,124 @@ export const myProjects = {
   "Web Development": {
     "FullStack || MERN": [
       {
-        title: "CodeCircle-Ayush3012",
-        img: "/assets/projects/codecircle.jpg",
-        alt: "CodeCircle-Ayush3012",
+        title: "Collaborative Task Manager",
+        img: "/assets/projects/collborative-task-manager.png",
+        alt: "Collaborative Task Manager",
         tech_stacks:
-          "NextJs, TypeScript, Prisma, Socket.io, ReactJs, TailwindCss, MongoDB, JavaScript, Cloudinary",
+          "React (Vite), TypeScript, Tailwind CSS, React Query, React Hook Form, Zod, Node.js, Express, Prisma, MongoDB, Socket.io, JWT, Vercel, Render",
+        githubLink:
+          "https://github.com/Ayush-3012/collaborative-task-manager",
+        deployedLink:
+          "https://collaborative-task-manager-pi.vercel.app/",
+        description:
+          "A production-ready full-stack collaborative task management application focused on clean architecture, secure authentication, real-time collaboration, scalable state management, task assignment and tracking, instant notifications.",
+      },
+      {
+        title: "CodeCircle",
+        img: "/assets/projects/codecircle.jpg",
+        alt: "CodeCircle",
+        tech_stacks:
+          "Next.js, TypeScript, Prisma, Socket.io, MongoDB, Tailwind CSS, Cloudinary",
         githubLink: "https://github.com/Ayush-3012/CodeCircle",
         deployedLink: "https://codecircle-iozo.onrender.com/",
         description:
-          "A platform for developers to collaborate and share knowledge.",
+          "Full-stack developer social platform with posts, comments, real-time chat, and collaborative workflows.",
+      },
+      {
+        title: "HuntFlow",
+        img: "/assets/projects/huntflow.png",
+        alt: "HuntFlow",
+        tech_stacks:
+          "Next.js, TypeScript, Tailwind CSS, MongoDB, AWS S3, Email Automation, Job Tracking",
+          githubLink: " https://github.com/Ayush-3012/HuntFlow",
+        deployedLink: "https://huntflow-ai.vercel.app/",
+        description:
+          "AI-powered job application platform that generates tailored resumes, outreach emails, and application tracking dashboards.",
+      },
+      {
+        title: "Extracto",
+        img: "/assets/projects/.jpg",
+        alt: "Extracto",
+        tech_stacks:
+          "RAG, Pinecone, LLM, Next.js, Vector Search, Document Ingestion APIs",
+        githubLink: "https://github.com/Ayush-3012/extracto",
+        description:
+          "RAG-based document assistant that enables natural-language queries with contextual AI answers and semantic retrieval.",
+      },
+      {
+        title: "Skool of Hip Hop",
+        img: "/assets/projects/skoolofhiphop.png",
+        alt: "Skool of Hip Hop",
+        tech_stacks:
+          "Laravel, PHP, MySQL, Pusher, Bootstrap, Payment Gateway, OTP Authentication",
+        description:
+          "Production dance academy platform with student management, payment collection, role-based access, and live notifications.",
+      },
+    ],
+    "NextJS || React": [
+      {
+        title: "CodeCircle",
+        img: "/assets/projects/codecircle.jpg",
+        alt: "CodeCircle",
+        tech_stacks:
+          "Next.js, TypeScript, Prisma, Socket.io, React, Tailwind CSS, MongoDB",
+        githubLink: "https://github.com/Ayush-3012/CodeCircle",
+        deployedLink: "https://codecircle-iozo.onrender.com/",
+        description:
+          "A high-performance developer collaboration app with real-time communication and modern UI workflows.",
+      },
+      {
+        title: "Portfolio 3.0",
+        img: "/assets/projects/portfolio-next.jpg",
+        alt: "Portfolio 3.0",
+        tech_stacks: "JavaScript, Next.js, React, Tailwind CSS, Vercel, Framer Motion",
+        githubLink: "https://github.com/Ayush-3012/portfolio-3.O",
+        deployedLink: "https://portfolio-ayush3012.vercel.app/",
+        description:
+          "Modern personal portfolio showcasing my latest experience, skills, and project work.",
       },
       {
         title: "HireMe",
         img: "/assets/projects/hireme.jpg",
         alt: "HireMe",
         tech_stacks:
-          "MongoDb, ExpresJs, React Js, NodeJs, Tailwind, Framer Motion, React-Router, Context-API, JWT",
+          "MongoDB, Express.js, React, Node.js, Tailwind CSS, JWT, Context API",
         githubLink: "https://github.com/Ayush-3012/HireMe",
         deployedLink: "https://hire-me-ayush-3012.vercel.app/",
         description:
-          "This project bridges the gap between job seekers and employers...",
-      },
-      {
-        title: "Dsa-Cracker",
-        img: "/assets/projects/dsa-cracker.jpg",
-        alt: "Dsa-Cracker",
-        tech_stacks:
-          "MERN Stack, MongoDB, ExpressJs, ReactJs, NodeJs, REST API, Tailwind",
-        githubLink: "https://github.com/Ayush-3012/DsaCracker",
-        deployedLink: "https://dsa-cracker-ayush-3012.vercel.app/",
-        description:
-          "DSA Cracker helps one to build confidence in solving any coding-related question...",
-      },
-      {
-        title: "Box-Office",
-        img: "/assets/projects/box-office.jpg",
-        alt: "Box-Office",
-        tech_stacks:
-          "MERN Stack, Mongodb, Express, React, Node, RESTApi, API, Tailwind",
-        githubLink: "https://github.com/Ayush-3012/box-office",
-        deployedLink: "https://box-office-ayush-3012.vercel.app/",
-        description:
-          "Get your fav shows details on just one click and save them.",
-      },
-    ],
-    "NextJS || React": [
-      {
-        title: "CodeCircle-Ayush3012",
-        img: "/assets/projects/codecircle.jpg",
-        alt: "CodeCircle-Ayush3012",
-        tech_stacks:
-          "NextJs, TypeScript, Prisma, Socket.io, ReactJs, TailwindCss, MongoDB, JavaScript, Cloudinary",
-        githubLink: "https://github.com/Ayush-3012/CodeCircle",
-        deployedLink: "https://codecircle-iozo.onrender.com/",
-        description:
-          "A platform for developers to collaborate and share knowledge.",
-      },
-      {
-        title: "Portfolio-Ayush3012",
-        img: "/assets/projects/portfolio-next.jpg",
-        alt: "Portfolio-Ayush3012",
-        tech_stacks:
-          "JavaScript, NextJs, ReactJs, TailwindCss, Vercel, Framer-Motion",
-        githubLink: "https://github.com/Ayush-3012/portfolio-3.O",
-        deployedLink: "https://portfolio-ayush3012.vercel.app/",
-        description: "New Personal portfolio using next js and latest tech.",
-      },
-      {
-        title: "Box-Office-NextJs",
-        img: "/assets/projects/box-office-nextjs.jpg",
-        alt: "Box-Office-NextJs",
-        tech_stacks: "NextJs, React Js, Redux, Tailwind, Vercel",
-        githubLink: "https://github.com/Ayush-3012/box-office-nextjs",
-        deployedLink: "https://box-office-nextjs.vercel.app/",
-        description:
-          "Get your fav shows details on just one click and save them.",
+          "Job-seeking platform connecting candidates with recruiters through streamlined application workflows.",
       },
       {
         title: "ShoppyGlobe",
         img: "/assets/projects/shoppyglobe.jpg",
         alt: "ShoppyGlobe",
         tech_stacks:
-          "React Js, Redux, Tailwind, Framer Motion, React Router, Vercel,",
+          "React, Redux, Tailwind CSS, Framer Motion, React Router, Vercel",
         githubLink:
           "https://github.com/Ayush-3012/ShoppyGlobe-Ayush3012/tree/main/frontend",
         deployedLink: "https://shoppy-globe-ayush3012.vercel.app/",
         description:
-          "A sleek and responsive full-stack E-commerce application built using React, Redux Toolkit, and Tailwind CSS. It allows users to browse products, view product details, add items to the cart, manage quantity, and proceed to checkout.",
+          "Responsive e-commerce app for browsing products, managing cart, and checking out smoothly.",
       },
       {
-        title: "BeyondChat-AIBot",
-        img: "/assets/projects/beyondchat-aibot.jpg",
-        alt: "BeyondChat-AIBot",
-        tech_stacks: "React Js, Tailwind, Vercel, OpenRouter, Mistral AI",
-        githubLink: "https://github.com/Ayush-3012/beyondChats-aiBot",
-        deployedLink: "https://beyond-chats-ai-bot.vercel.app/",
+        title: "Box-Office",
+        img: "/assets/projects/box-office-nextjs.jpg",
+        alt: "Box-Office",
+        tech_stacks: "Next.js, React, Redux, Tailwind CSS, Vercel",
+        githubLink: "https://github.com/Ayush-3012/box-office-nextjs",
+        deployedLink: "https://box-office-nextjs.vercel.app/",
         description:
-          "An AI-powered chatbot built with React and integrated with OpenRouter...",
+          "Media discovery app for browsing show details, recommendations, and quick information lookup.",
       },
       {
         title: "E-Library",
         img: "/assets/projects/e-library.jpg",
         alt: "E-Library",
-        tech_stacks:
-          "React Js, Tailwind, Redux, Framer Motion, React Router, Vercel",
+        tech_stacks: "React, Redux, Tailwind CSS, Framer Motion, Routing",
         githubLink: "https://github.com/Ayush-3012/e-library",
         deployedLink: "https://e-library-ayush-3012.vercel.app/",
         description:
-          "E-Library is a modern web application that allows users to explore, manage books efficiently.",
-      },
-      {
-        title: "Hacker's Press",
-        img: "/assets/projects/hackers-press.jpg",
-        alt: "Hacker's Press",
-        tech_stacks: "ReactJs, Axios, API, REST API",
-        githubLink: "https://github.com/Ayush-3012/Today-sHackers",
-        deployedLink: "https://today-s-hackers.vercel.app/",
-        description:
-          "An online press to fetch and read about news related or linked to hackers community",
+          "Modern digital library for exploring, storing, and managing reading resources in a clean UI.",
       },
     ],
     "HTML/CSS + JS": [
@@ -127,74 +127,53 @@ export const myProjects = {
         title: "Today's Press",
         img: "/assets/projects/todayspress.jpg",
         alt: "Today's Press",
-        tech_stacks: "HTML, CSS, JavaScript, API",
+        tech_stacks: "HTML, CSS, JavaScript, REST API",
         githubLink: "https://github.com/Ayush-3012/TodaysPress/",
-        description: "Fetches and displays News on topics through API.",
+        description: "News platform fetching live content through API-driven updates.",
       },
       {
         title: "Joke Generator",
         img: "/assets/projects/jokegenerator.jpg",
         alt: "Joke Generator",
-        tech_stacks: "HTML, CSS, JavaScript, API, Tailwind Css",
+        tech_stacks: "HTML, CSS, JavaScript, API",
         githubLink: "https://github.com/Ayush-3012/Joke-Generator/",
         deployedLink: "https://ayush-3012.github.io/Joke-Generator/",
-        description: "Generates Jokes randomly, by fetching jokes from an API.",
+        description: "Random joke generator built with API-based content retrieval and a clean UI.",
       },
       {
         title: "Simon Game",
         img: "/assets/projects/simongame.jpg",
         alt: "Simon Game",
-        tech_stacks: "HTML, CSS, JavaScript, Jquery",
+        tech_stacks: "HTML, CSS, JavaScript, jQuery",
         githubLink: "https://github.com/Ayush-3012/simon-game/",
         deployedLink: "https://ayush-3012.github.io/simon-game/",
-        description: "Simon game using HTML, CSS, JavaScript, and Jquery.",
-      },
-    ],
-    "Fullstack + EJS + Express": [
-      {
-        title: "Portfolio(Old)",
-        img: "/assets/projects/portfolio-new.jpg",
-        alt: "Portfolio(Old)",
-        tech_stacks: "HTML, CSS, Scss, JavaScript, Node Js, Express Js, Ejs",
-        githubLink: "https://github.com/Ayush-3012/Portfolio",
-        deployedLink: "https://ayush-kumar-portfolio.vercel.app/",
-        description:
-          "My Personal Portfolio to understand my skills and experience better and connect with me.",
-      },
-      {
-        title: "ToDo List",
-        img: "/assets/projects/todolist.jpg",
-        alt: "ToDo List",
-        tech_stacks:
-          "HTML, CSS, Scss, JavaScript, Mongodb, Node Js, Express Js, Ejs",
-        githubLink: "https://github.com/Ayush-3012/todoList",
-        deployedLink: "https://github.com/Ayush-3012/todoList",
-        description: "ToDo list to manage everyday work",
+        description: "Interactive memory game built using DOM manipulation and event-driven logic.",
       },
     ],
   },
 
-  "Data Science/Machine Learning": {
-    "ML Models": [
+  "Data Science / AI": {
+    "AI & RAG": [
       {
-        title: "Handwritten Digit Recognition",
-        img: "/assets/projects/handwritten-digit-recognition.jpg",
-        alt: "Handwritten Digit Recognition",
+        title: "Extracto",
+        img: "/assets/projects/portfolio-next.jpg",
+        alt: "Extracto",
         tech_stacks:
-          "Python, Numpy, Pandas, Tensorflow, Keras, Scikit-learn, etc.",
-        deployedLink:
-          "https://drive.google.com/file/d/1hwobS5Cp5y4zeBsi6ub-vA-UQxh03YlT/view",
+          "Python, RAG, Pinecone, Vector Search, LLM Integration, Document Retrieval",
+        githubLink: "https://github.com/Ayush-3012/extracto",
         description:
-          "ML model that accurately recognizes handwritten digits (0-9).",
+          "Semantic document search and Q&A application for contextual AI responses from uploaded knowledge sources.",
       },
       {
-        title: "Weather Prediction",
-        img: "/assets/projects/weather-prediction.jpg",
-        alt: "Weather Prediction",
-        tech_stacks: "Python, Numpy, Pandas, Matplotlib, Seaborn, Scikit-learn",
-        deployedLink:
-          "https://drive.google.com/file/d/1krYwykopT_Z43vLRsA5LlxehgwROzS0e/view",
-        description: "Predicts the weather by analyzing the provided data.",
+        title: "HuntFlow",
+        img: "/assets/projects/portfolio-next.jpg",
+        alt: "HuntFlow",
+        tech_stacks:
+          "AI workflows, Resume Generation, Email Automation, Dashboard, S3 Storage",
+        githubLink: "https://github.com/Ayush-3012/HuntFlow",
+        deployedLink: "https://huntflow-ai.vercel.app/",
+        description:
+          "Generative AI assistant for resume crafting, outreach messaging, and end-to-end application tracking.",
       },
     ],
     "Data Analysis": [
@@ -202,11 +181,31 @@ export const myProjects = {
         title: "Playstore Analysis",
         img: "/assets/projects/playstore-analysis.jpg",
         alt: "Playstore Analysis",
-        tech_stacks: "Python, Numpy, Pandas, Matplotlib.",
+        tech_stacks: "Python, NumPy, Pandas, Matplotlib",
         deployedLink:
           "https://docs.google.com/document/d/1iCdMTlTb0fBrbMHC9lXJpdQxZD83pQEc/edit",
         description:
-          "Analyzed and Visualized the data extracted from Playstore dataset.",
+          "Structured analysis of app-market data to uncover usage trends and performance patterns.",
+      },
+      {
+        title: "Weather Prediction",
+        img: "/assets/projects/weather-prediction.jpg",
+        alt: "Weather Prediction",
+        tech_stacks: "Python, NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn",
+        deployedLink:
+          "https://drive.google.com/file/d/1krYwykopT_Z43vLRsA5LlxehgwROzS0e/view",
+        description: "Machine learning workflow to forecast weather based on historical data patterns.",
+      },
+      {
+        title: "Handwritten Digit Recognition",
+        img: "/assets/projects/handwritten-digit-recognition.jpg",
+        alt: "Handwritten Digit Recognition",
+        tech_stacks:
+          "Python, NumPy, Pandas, TensorFlow, Keras, Scikit-learn",
+        deployedLink:
+          "https://drive.google.com/file/d/1hwobS5Cp5y4zeBsi6ub-vA-UQxh03YlT/view",
+        description:
+          "Classifier model for recognizing handwritten digits across the 0-9 range with high validation accuracy.",
       },
     ],
   },
