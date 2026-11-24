@@ -40,27 +40,19 @@ export default function Experience() {
                   <FaBriefcase className="text-base" />
                 </div>
 
-                <div className="flex items-start justify-between gap-4 max-md:flex-col max-md:gap-2">
-                  <div>
-                    <h2 className="text-2xl font-extrabold text-rose-300 max-md:text-xl">
-                      {item.role}
-                    </h2>
-                    <p className="text-lg font-bold text-cyan-300 max-md:text-base">
-                      {item.company} | {item.location}
-                    </p>
-                  </div>
-                  <div className="shrink-0 text-right max-md:text-left">
-                    <p className="text-rose-400 font-bold">{item.period}</p>
-                    <p className="text-sm text-slate-300">{item.type}</p>
-                  </div>
+                <div className="flex items-start justify-between gap-3 max-md:flex-col max-md:gap-1">
+                  <h2 className="text-xl font-extrabold text-rose-300 max-md:text-lg">
+                    {item.role} - {item.company}, {item.location}
+                  </h2>
+                  <p className="shrink-0 text-sm font-bold text-cyan-300 max-md:text-left">
+                    {item.period}
+                  </p>
                 </div>
 
-                <p className="mt-3 text-white/90">{item.description}</p>
-
-                <ul className="mt-3 space-y-1.5 text-slate-200">
+                <ul className="mt-3 space-y-2 text-slate-200">
                   {item.highlights.map((highlight) => (
-                    <li key={highlight} className="flex gap-2">
-                      <span className="text-cyan-400">&#9656;</span>
+                    <li key={highlight} className="flex gap-2 leading-relaxed">
+                      <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-cyan-400" />
                       <span>{highlight}</span>
                     </li>
                   ))}

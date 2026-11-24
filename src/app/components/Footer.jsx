@@ -29,7 +29,7 @@ const Footer = () => {
 
   return (
     <motion.div
-      className="shadow-[1px_1px_20px] ronded-r-xl shadow-purple-700 h-screen w-28 relative max-md:w-screen max-md:h-20"
+      className="shadow-[1px_1px_20px] rounded-r-xl shadow-purple-700 h-screen w-28 relative max-md:w-screen max-md:h-20"
       initial={isMobile ? { y: -1800 } : { x: -1800 }}
       animate={isMobile ? { y: 0 } : { x: 0 }}
       transition={{ duration: 0.6 }}
@@ -38,7 +38,7 @@ const Footer = () => {
       <div className="absolute inset-0 clip-bottom-bracket hidden max-md:block"></div>
       <div className="flex flex-col text-white w-full h-full pl-2 z-50 items-start justify-center space-y-5 max-md:space-y-1 max-md:space-x-5 max-sm:space-x-3 max-md:flex-row max-md:pl-0">
         <MotionLink
-          href={"./assets/CV - Ayush_Kumar.pdf"}
+          href={"./assets/Ayush Kumar - Resume.pdf"}
           target="_blank"
           download
           whileHover={{
