@@ -46,6 +46,17 @@ export const myProjects = {
         description:
           "RAG-based document assistant that enables natural-language queries with contextual AI answers and semantic retrieval.",
       },
+       {
+        title: "HireMe",
+        img: "/assets/projects/hireme.jpg",
+        alt: "HireMe",
+        tech_stacks:
+          "MongoDB, Express.js, React, Node.js, Tailwind CSS, JWT, Context API",
+        githubLink: "https://github.com/Ayush-3012/HireMe",
+        deployedLink: "https://hire-me-ayush-3012.vercel.app/",
+        description:
+          "Job-seeking platform connecting candidates with recruiters through streamlined application workflows.",
+      },
       {
         title: "Skool of Hip Hop",
         img: "/assets/projects/skoolofhiphop.png",
@@ -171,7 +182,7 @@ export const myProjects = {
         tech_stacks:
           "AI workflows, Resume Generation, Email Automation, Dashboard, S3 Storage",
         githubLink: "https://github.com/Ayush-3012/HuntFlow",
-        deployedLink: "https://huntflow-ai.vercel.app/",
+        deployedLink: "https://huntflow-ayush3012.vercel.app/",
         description:
           "Generative AI assistant for resume crafting, outreach messaging, and end-to-end application tracking.",
       },
